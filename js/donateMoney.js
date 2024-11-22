@@ -12,7 +12,10 @@ document.getElementById('btn-donate-now').addEventListener('click',function(even
   const totalDonatedMoney = document.getElementById('total-donate-money').innerText;
   const totalDonatedMoneyNumber = parseFloat(totalDonatedMoney); 
 
-
+  if (isNaN(addMoney) || addMoney <= 0) {
+    alert("Please enter a valid donation amount.");
+    return;
+}
   const newTotalDonatedMoney = totalDonatedMoneyNumber + addMoneyNumber ;
 
 

@@ -7,7 +7,10 @@ console.log(addMoneyF);
 
 const balanceNumber =  getTextValueById('primary-money');
 const totalDonatedMoneyF = getTextValueById('total-donate-money-feni');
-
+if (isNaN(addMoneyF) || addMoneyF <= 0) {
+    alert("Please enter a valid donation amount.");
+    return;
+}
 
 const newTotalDonatedMoneyF = totalDonatedMoneyF + addMoneyF ;
 
@@ -16,7 +19,29 @@ document.getElementById('total-donate-money-feni').innerText = newTotalDonatedMo
 const primaryMoneyNow = balanceNumber - addMoneyF  ;
 
 document.getElementById('primary-money').innerText = primaryMoneyNow + ' BDT';
+
+
 })
 
 
-// Quota Movement
+document.getElementById('btn-donate-now-q').addEventListener('click', function(event) {
+    event.preventDefault();
+
+    const addMoneyQ = getInputFieldValueById('current-donate-money-q');
+    
+
+    const balanceNumberQ = getTextValueById('primary-money');
+    const totalDonatedMoneyQ = getTextValueById('total-donate-money-q');
+    
+    if (isNaN(addMoneyQ) || addMoneyQ <= 0) {
+        alert("Please enter a valid donation amount.");
+        return;
+    }
+
+    const newTotalDonatedMoneyQ = totalDonatedMoneyQ + addMoneyQ;
+    document.getElementById('total-donate-money-q').innerText = newTotalDonatedMoneyQ + ' BDT';
+
+    const primaryMoneyNowQ = balanceNumberQ - addMoneyQ;
+    document.getElementById('primary-money').innerText = primaryMoneyNowQ + ' BDT';
+});
+
