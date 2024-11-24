@@ -1,6 +1,7 @@
 document.getElementById('donation-button').addEventListener('click',function(){
-    showSectionById('cash-out-form');
+   showSectionById('donation-form')
 });
-document.getElementById('show-transactions-form').addEventListener('click',function(){
-    showSectionById('transaction-form');
+document.getElementById('history-button').addEventListener('click',function(){
+    console.log('History  btn clicked');
+    showSectionById('transaction-form')
 });

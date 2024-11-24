@@ -20,6 +20,13 @@ const primaryMoneyNow = balanceNumber - addMoneyF  ;
 
 document.getElementById('primary-money').innerText = primaryMoneyNow + ' BDT';
 
+const p = document.createElement('p');
+p.innerText = `Donated: ${addMoneyF} Taka is Donated 6500 Taka is Donated for Flood Relief in Feni,Bangladesh New_Balance: ${primaryMoneyNow}`;
+console.log(p.innerText);
+
+
+
+document.getElementById('transaction-form').appendChild(p);
 
 })
 
@@ -43,5 +50,13 @@ document.getElementById('btn-donate-now-q').addEventListener('click', function(e
 
     const primaryMoneyNowQ = balanceNumberQ - addMoneyQ;
     document.getElementById('primary-money').innerText = primaryMoneyNowQ + ' BDT';
+
+    const p = document.createElement('p');
+    p.innerText = `Donated: ${addMoneyQ} Taka is Donated 15500 Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh New_Balance: ${primaryMoneyNow}`;
+    console.log(p.innerText);
+
+
+
+document.getElementById('transaction-form').appendChild(p);
 });
 
