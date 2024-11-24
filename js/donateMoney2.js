@@ -21,7 +21,7 @@ const primaryMoneyNow = balanceNumber - addMoneyF  ;
 document.getElementById('primary-money').innerText = primaryMoneyNow + ' BDT';
 
 const p = document.createElement('p');
-p.innerText = `Donated: ${addMoneyF} Taka is Donated 6500 Taka is Donated for Flood Relief in Feni,Bangladesh New_Balance: ${primaryMoneyNow}`;
+p.innerText = `Donated: ${addMoneyF} Taka is Donated for Flood Relief in Feni,Bangladesh New_Balance: ${primaryMoneyNow}`;
 console.log(p.innerText);
 
 
@@ -52,7 +52,7 @@ document.getElementById('btn-donate-now-q').addEventListener('click', function(e
     document.getElementById('primary-money').innerText = primaryMoneyNowQ + ' BDT';
 
     const p = document.createElement('p');
-    p.innerText = `Donated: ${addMoneyQ} Taka is Donated 15500 Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh New_Balance: ${primaryMoneyNow}`;
+    p.innerText = `Donated: ${addMoneyQ} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh New_Balance: ${primaryMoneyNowQ}`;
     console.log(p.innerText);
 
 

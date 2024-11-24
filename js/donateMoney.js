@@ -29,10 +29,22 @@ document.getElementById('btn-donate-now').addEventListener('click',function(even
 
 
   const p = document.createElement('p');
-                      p.innerText = `Donated: ${addMoneyNumber} Taka is Donated 96500 Taka is Donated for famine-2024 at Feni, Bangladesh New_Balance: ${primaryMoneyNow}`;
+                      p.innerText = `Donated: ${addMoneyNumber} Taka is Donated for famine-2024 at Feni, Bangladesh New_Balance: ${primaryMoneyNow}`;
                       console.log(p.innerText);
 
-
+                      p.classList.add(
+                        'border',
+                        'border-green-500',     
+                        'text-xl',
+                        'font-bold',  
+                        'p-4', 
+                        'mb-4', 
+                        'w-2/3',
+                        'text-green-700',
+                       
+                        'mx-auto' ,
+                        'rounded-xl'
+                      );
 
 document.getElementById('transaction-form').appendChild(p);
 })
