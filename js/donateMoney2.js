@@ -25,7 +25,19 @@ p.innerText = `Donated: ${addMoneyF} Taka is Donated for Flood Relief in Feni,Ba
 console.log(p.innerText);
 
 
-
+p.classList.add(
+    'border',
+    'border-green-500',     
+    'text-xl',
+    'font-bold',  
+    'p-4', 
+    'mb-4', 
+    'w-2/3',
+    'text-green-700',
+   
+    'mx-auto' ,
+    'rounded-xl'
+  );
 document.getElementById('transaction-form').appendChild(p);
 
 })
@@ -56,7 +68,19 @@ document.getElementById('btn-donate-now-q').addEventListener('click', function(e
     console.log(p.innerText);
 
 
-
+    p.classList.add(
+        'border',
+        'border-green-500',     
+        'text-xl',
+        'font-bold',  
+        'p-4', 
+        'mb-4', 
+        'w-2/3',
+        'text-green-700',
+       
+        'mx-auto' ,
+        'rounded-xl'
+      );
 document.getElementById('transaction-form').appendChild(p);
 });
 
